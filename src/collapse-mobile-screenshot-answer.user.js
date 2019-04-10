@@ -6,7 +6,7 @@
 // @match               *://*.zhihu.com/*
 // @exclude             *://*.zhihu.com/question/*/answer/*
 // @grant none
-// @version             0.1
+// @version             0.2.0
 // @homepageURL         https://github.com/linonetwo/zhihu-linonetwo-userscripts
 // @supportURL          https://github.com/linonetwo/zhihu-linonetwo-userscripts/issues
 // @license             MIT
