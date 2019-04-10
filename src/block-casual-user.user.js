@@ -5,7 +5,7 @@
 // @namespace           https://onetwo.ren/
 // @match               *://*.zhihu.com/*
 // @grant none
-// @version             0.2.0
+// @version             0.2.1
 // @homepageURL         https://github.com/linonetwo/zhihu-linonetwo-userscripts
 // @supportURL          https://github.com/linonetwo/zhihu-linonetwo-userscripts/issues
 // @license             MIT
@@ -70,5 +70,7 @@ function throttle(fn, wait) {
   }
 }
 
+自动隐藏没有头像的用户的评论();
+给评论列表加上事件监听器();
 给评论按钮加上事件监听器以便给评论列表加上事件监听器();
 setTimeout(() => window.addEventListener('scroll', throttle(给评论按钮加上事件监听器以便给评论列表加上事件监听器, 检查间隔毫秒), { passive : true }), 1);
