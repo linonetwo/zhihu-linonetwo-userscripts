@@ -12,7 +12,7 @@
 // @icon                https://pic1.zhimg.com/2e33f063f1bd9221df967219167b5de0_m.jpg
 // @run-at 		        document-start
 // @date                04/10/2019
-// @modified            04/10/2019
+// @modified            04/11/2019
 // ==/UserScript==
 
 const userscriptautocollapsed = 'userscriptautocollapsed';
