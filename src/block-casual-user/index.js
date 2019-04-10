@@ -5,8 +5,8 @@
 // @match               *://*.zhihu.com/*
 // @grant none
 // @version             0.1
-// @homepageURL         https://onetwo.ren/
-// @supportURL          https://github.com/linonetwo
+// @homepageURL         https://github.com/linonetwo/zhihu-linonetwo-userscripts
+// @supportURL          https://github.com/linonetwo/zhihu-linonetwo-userscripts/issues
 // @license             MIT
 // @icon                https://pic1.zhimg.com/2e33f063f1bd9221df967219167b5de0_m.jpg
 // @run-at 		        document-start
