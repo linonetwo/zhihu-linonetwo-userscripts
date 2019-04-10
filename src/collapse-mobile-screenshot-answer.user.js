@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name                自动收起含有手机截图的回答
+// @name                自动收起知乎含有手机截图的回答
 // @description:zh-CN   手机截图在桌面端很占用空间影响阅读，这个脚本会在滚动屏幕的时候自动收起这些回答
 // @author linonetwo
 // @namespace           https://onetwo.ren/
