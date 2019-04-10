@@ -22,14 +22,19 @@ const 检查间隔毫秒 = 250;
 const 给评论列表加上事件监听器 = () => {
     // 轮询直到评论列表加载完毕
     const intervalHandler = setInterval(() => {
-        const 评论列表 = document.querySelector('div.CommentListV2');
-        if (评论列表) {
-            clearInterval(intervalHandler);
+        const 评论列表们 = document.querySelectorAll('div.CommentListV2');
+        if (评论列表们.length > 0) {
+            // clearInterval(intervalHandler); // useless for such a web app
             自动隐藏没有头像的用户的评论();
-            评论列表.addEventListener('mousemove', throttle(自动隐藏没有头像的用户的评论, 检查间隔毫秒));
-            评论列表.addEventListener('scroll', throttle(自动隐藏没有头像的用户的评论, 检查间隔毫秒));
+            评论列表们.forEach(评论列表 => 评论列表.addEventListener('mousemove', throttle(自动隐藏没有头像的用户的评论, 检查间隔毫秒)));
+            评论列表们.forEach(评论列表 => 评论列表.addEventListener('scroll', throttle(自动隐藏没有头像的用户的评论, 检查间隔毫秒)));
         }
     }, 检查间隔毫秒);
+}
+
+const 给翻页按钮加上事件监听器 = () => {
+    const 翻页按钮 = document.querySelectorAll('button.Button.PaginationButton.Button--plain');
+    翻页按钮.forEach(按钮 => 按钮.addEventListener('click', 给评论列表加上事件监听器, { passive : true }));
 }
 
 function 给评论按钮加上事件监听器以便给评论列表加上事件监听器() {
