@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name                自动屏蔽知乎三无用户的评论
 // @description:zh-CN   自动屏蔽无头像、无贡献、不友善用户的评论（目前仅实现头像检测，贡献检测太耗流量、基于 SoLiD 的云黑名单还在实验中）
+// @author linonetwo
 // @namespace           https://onetwo.ren/
 // @match               *://*.zhihu.com/*
 // @grant none

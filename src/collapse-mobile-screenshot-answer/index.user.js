@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name                自动收起含有手机截图的回答
 // @description:zh-CN   自动收起含有手机截图的回答
+// @author linonetwo
 // @namespace           https://onetwo.ren/
 // @match               *://*.zhihu.com/*
 // @exclude             *://*.zhihu.com/question/*/answer/*
