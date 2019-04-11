@@ -5,7 +5,7 @@
 // @namespace           https://onetwo.ren/
 // @match               *://*.zhihu.com/*
 // @grant none
-// @version             0.2.1
+// @version             0.2.2
 // @homepageURL         https://github.com/linonetwo/zhihu-linonetwo-userscripts
 // @supportURL          https://github.com/linonetwo/zhihu-linonetwo-userscripts/issues
 // @license             MIT
@@ -16,7 +16,7 @@
 // ==/UserScript==
 
 const userscriptautocollapsed = 'userscriptautocollapsed';
-const 默认头像的URL = 'https://pic4.zhimg.com/da8e974dc_s.jpg';
+const 默认头像的URL片段 = 'https://pic4.zhimg.com/da8e974dc';
 const 检查间隔毫秒 = 250;
 
 const 给评论列表加上事件监听器 = () => {
@@ -49,7 +49,7 @@ function 自动隐藏没有头像的用户的评论() {
       if (评论.dataset[userscriptautocollapsed]) return false;
 
       const 头像 = 评论.querySelector('img.Avatar');
-      if (头像 && 头像.src === 默认头像的URL) return true;
+      if (头像 && 头像.src.includes(默认头像的URL片段)) return true;
     })
     .forEach(评论 => {
       评论.dataset[userscriptautocollapsed] = true;
