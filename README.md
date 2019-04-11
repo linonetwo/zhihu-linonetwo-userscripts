@@ -6,6 +6,8 @@
 
 https://github.com/linonetwo/zhihu-linonetwo-userscripts/raw/master/src/block-casual-user.user.js
 
+UserScript+ 的 bug 会导致连 console.log 都无法运行。
+
 ## 自动收起知乎含有手机截图的回答
 
 手机截图在桌面端很占用空间影响阅读，这个脚本会在滚动屏幕的时候自动收起这些回答
