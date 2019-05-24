@@ -8,6 +8,7 @@
 // @run-at        document-start
 // @include       https://www.tampermonkey.net/scripts.php
 // @icon          https://www.tampermonkey.net/images/icon.png
+// @license       MIT
 // ==/UserScript==
 
 const url = window.location.href;
