@@ -6,7 +6,7 @@
 // @version       1.0
 // @grant         none
 // @run-at        document-start
-// @include       https://www.tampermonkey.net/scripts.php
+// @include       https://www.tampermonkey.net/*
 // @icon          https://www.tampermonkey.net/images/icon.png
 // @license       MIT
 // ==/UserScript==
